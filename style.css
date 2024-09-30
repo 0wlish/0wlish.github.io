@@ -1,7 +1,6 @@
 h1 {
     color: navy;
 }
-
 .border {
     padding: 0 50px;
     overflow: visible;
@@ -30,6 +29,31 @@ h1 {
     height: 300px;
     object-fit: cover;
   }
+
+  .courier-prime-regular {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .courier-prime-bold {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .courier-prime-regular-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .courier-prime-bold-italic {
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
 
   /* Responsive layout - makes a two column-layout instead of four columns */
 /*
