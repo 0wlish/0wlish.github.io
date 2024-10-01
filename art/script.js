@@ -10,7 +10,6 @@ img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src.substring(0, this.src.indexOf("_LR")) + this.src.substring(this.src.indexOf("_LR")+3);
   modalImg.src = modalImg.src.replace("LowRes", "images");
-  console.log(modalImg.src);
   captionText.innerHTML = this.alt;
 }
 
