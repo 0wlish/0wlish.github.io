@@ -8,7 +8,9 @@ var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
   modal.style.display = "block";
-  modalImg.src = this.src.substring(this.src.indexOf("_LR"), this.src.indexOf("_LR")+3); //append LR such that src is the not the LR version
+  modalImg.src = this.src.substring(0, this.src.indexOf("_LR")) + this.src.substring(this.src.indexOf("_LR")+3);
+  modalImg.src = modalImg.src.replace("LowRes", "images");
+  console.log(modalImg.src);
   captionText.innerHTML = this.alt;
 }
 
