@@ -5,6 +5,7 @@ var modal = document.getElementById("myModal");
 var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
+console.log(captionText); //this is null and it should not be
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;

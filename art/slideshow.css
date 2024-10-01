@@ -1,3 +1,11 @@
+#myImg {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+
+#myImg:hover {opacity: 0.7;}
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -39,4 +47,10 @@
     font-weight: bold;
     transition: 0.3s;
   }
+  .close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
   
