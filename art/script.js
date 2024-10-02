@@ -1,6 +1,6 @@
 // Get the modal
 var modal = document.getElementById("myModal");
-
+/*
 function openModal(){
     // Get the image and insert it inside the modal - use its "alt" text as a caption
     var img = document.getElementById("myImg");
@@ -11,6 +11,14 @@ function openModal(){
     modalImg.src = this.src.substring(0, this.src.indexOf("_LR")) + this.src.substring(this.src.indexOf("_LR")+3);
     modalImg.src = modalImg.src.replace("LowRes", "images");
     captionText.innerHTML = this.alt;
+}
+*/
+
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
 }
 
 // Get the <span> element that closes the modal
