@@ -1,10 +1,8 @@
 img.slides:hover {
     cursor: pointer;
     transition: 0.3s;
+    opacity: 0.7;
   }
-  
-
-img.slides:hover {opacity: 0.7;}
 
 #myModal {
     display: none; /* Hidden by default */
