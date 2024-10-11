@@ -1,6 +1,9 @@
 h1 {
     color: navy;
 }
+body {
+  margin: 0;
+}
 nav {
   padding: 20px;
   background-color: #d5d5d5;
