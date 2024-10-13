@@ -14,35 +14,37 @@
         <a href="/sketches-studies/">sketches and studies</a>
         <a href="/projects">projects</a>   
     </nav>
-    <h1>art</h1>
-    <p id="test">I do art sometimes! mostly acrylic and graphite, sometimes digital, sometimes watercolor.
-        Expect lots of birds.
-    </p>
-    <div class="border center">
-        <div class="row">
-            <div class="column">
-                <img src="/LowRes/Swan2_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(0)" class="slides">
-                <img src="/LowRes/Archaeopteryx_LR.jpg" onclick="showSlides(1)" class="slides">
-                <img src="/LowRes/Untitled (Bass)_LR.jpg" style="object-position: 5% 0;" onclick="showSlides(2)" class="slides">
-                <img src="/LowRes/Untitled (Cicada with wasp)_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(3)" class="slides">
+    <div class="text">
+        <h1>art</h1>
+        <p id="test">I do art sometimes! mostly acrylic and graphite, sometimes digital, sometimes watercolor.
+            Expect lots of birds.
+        </p>
+        <div class="border center">
+            <div class="row">
+                <div class="column">
+                    <img src="/LowRes/Swan2_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(0)" class="slides">
+                    <img src="/LowRes/Archaeopteryx_LR.jpg" onclick="showSlides(1)" class="slides">
+                    <img src="/LowRes/Untitled (Bass)_LR.jpg" style="object-position: 5% 0;" onclick="showSlides(2)" class="slides">
+                    <img src="/LowRes/Untitled (Cicada with wasp)_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(3)" class="slides">
+                </div>
+                <div class="column">
+                    <img src="/LowRes/Ear_LR.jpg" onclick="showSlides(4)" class="slides">
+                    <img src="/LowRes/Tiktaalik_LR.jpg" style="object-position: 20% 0" onclick="showSlides(5)" class="slides">
+                    <img src="/LowRes/Anchiornis_LR.jpg" onclick="showSlides(6)" class="slides">
+                    <img src="/LowRes/Untitled (Passenger pigeon)_LR.jpg" onclick="showSlides(7)" class="slides">
+                </div>
+                <div class="column">
+                    <img src="/LowRes/Smug Jug_LR.jpg" onclick="showSlides(8)" class="slides">
+                    <img src="/LowRes/Sinosauropteryx with Ephedra_LR.jpg" onclick="showSlides(9)" class="slides">
+                    <img src="/LowRes/Untitled (ISG)_LR.jpg" onclick="showSlides(10)" class="slides">
+                    <img src="/LowRes/Untitled (Heron) 2_LR.jpg" style="object-position: 100% 0;" onclick="showSlides(11)" class="slides">
+                </div>
             </div>
-            <div class="column">
-                <img src="/LowRes/Ear_LR.jpg" onclick="showSlides(4)" class="slides">
-                <img src="/LowRes/Tiktaalik_LR.jpg" style="object-position: 20% 0" onclick="showSlides(5)" class="slides">
-                <img src="/LowRes/Anchiornis_LR.jpg" onclick="showSlides(6)" class="slides">
-                <img src="/LowRes/Untitled (Passenger pigeon)_LR.jpg" onclick="showSlides(7)" class="slides">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption"></div>
             </div>
-            <div class="column">
-                <img src="/LowRes/Smug Jug_LR.jpg" onclick="showSlides(8)" class="slides">
-                <img src="/LowRes/Sinosauropteryx with Ephedra_LR.jpg" onclick="showSlides(9)" class="slides">
-                <img src="/LowRes/Untitled (ISG)_LR.jpg" onclick="showSlides(10)" class="slides">
-                <img src="/LowRes/Untitled (Heron) 2_LR.jpg" style="object-position: 100% 0;" onclick="showSlides(11)" class="slides">
-            </div>
-        </div>
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="modalImage">
-            <div id="caption"></div>
         </div>
     </div>
     <script src="script.js"></script>

@@ -4,6 +4,9 @@ h1 {
 body {
   margin: 0;
 }
+.text {
+  margin: 10px;
+}
 nav {
   padding: 20px;
   background-color: #d5d5d5;
