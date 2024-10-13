@@ -4,7 +4,7 @@
     <head>
         <title>paleoart - Victoria's website</title>
         <link rel="stylesheet" href="/style.css">
-       
+        <link rel="stylesheet" href="/slideshow.css">
         <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     <body class="courier-prime-regular">
@@ -17,6 +17,16 @@
         </nav>
         <div class="text">
             <h1>Paleoart!</h1>
+                <div class="border center">
+                    <div class="row">
+                        <div class="column">
+                            <img src="/LowRes/Archaeopteryx_LR.jpg" onclick="showSlides(0)" class="slides">
+                            <img src="/LowRes/Anchiornis_LR.jpg" onclick="showSlides(1)" class="slides">
+                            <img src="/LowRes/Sinosauropteryx with Ephedra_LR.jpg" onclick="showSlides(2)" class="slides">
+                        </div>
+                    </div>
+                </div>
         </div>
+        <script src="/script.js"></script>
     </body>
 </html>
