@@ -1,5 +1,13 @@
 // Get the modal
 var modal = document.getElementById("myModal");
+const slides = document.getElementsByClassName("slides");
+var modalImg = document.getElementById("modalImage");
+var currentSlide;
+
+for (let i = 0; i < slides.length; i++) {
+  slides.item(i).src = slides.item(i).src.substring(0, slides.item(i).src.indexOf("_LR")) + slides.item(i).src.substring(slides.item(i).src.indexOf("_LR")+3);
+  slides.item(i).src = slides.item(i).src.replace("LowRes", "images");
+}
 /*
 function openModal(){
     // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -15,12 +23,10 @@ function openModal(){
 */
 
 function showSlides(n) {
-  var i;
-  const slides = document.getElementsByClassName("slides");
-  var modalImg = document.getElementById("modalImage");
-  modalImg.src = slides.item(n).src.substring(0, slides.item(n).src.indexOf("_LR")) + slides.item(n).src.substring(slides.item(n).src.indexOf("_LR")+3);
-  modalImg.src = modalImg.src.replace("LowRes", "images");
+  modalImg.src = slides.item(n).src;
   openModal();
+  currentSlide = n;
+  console.log(currentSlide);
 
   /*
   if (n > slides.length) {
@@ -38,6 +44,12 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt; */
+}
+
+function plusSlides(n) {
+  modalImg.src.innerHTML = slides.item(currentSlide + n).src;
+  console.log(currentSlide + n);
+  console.log(slides.item(currentSlide + n).src);
 }
 
 function openModal() {
