@@ -21,7 +21,7 @@ img.slides:hover {
     display: block;
     width: 80%;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 90%;
     object-fit: contain;
   }
   
@@ -32,7 +32,7 @@ img.slides:hover {
     width: 80%;
     max-width: 700px;
     text-align: center;
-    color: #ccc;
+    color: #444;
     padding: 10px 0;
     height: 150px;
   }

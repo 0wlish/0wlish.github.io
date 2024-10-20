@@ -24,9 +24,9 @@
         <div class="border center">
             <div class="row">
                 <div class="column">
-                    <img src="/LowRes/Swan2_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(0)" class="slides">
-                    <img src="/LowRes/Untitled (Bass)_LR.jpg" style="object-position: 5% 0;" onclick="showSlides(1)" class="slides">
-                    <img src="/LowRes/Untitled (Cicada with wasp)_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(2)" class="slides">
+                    <img src="/LowRes/Swan2_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(0)" class="slides" alt="swan">
+                    <img src="/LowRes/Untitled (Bass)_LR.jpg" style="object-position: 5% 0;" onclick="showSlides(1)" class="slides" alt="sunny">
+                    <img src="/LowRes/Untitled (Cicada with wasp)_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(2)" class="slides" alt="cicada-killer wasp">
                 </div>
                 <div class="column">
                     <img src="/LowRes/Ear_LR.jpg" onclick="showSlides(3)" class="slides">
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div id="myModal" class="modal">
-                <span class="close">&times;</span>
+                <span class="close" onclick="closeModal()">&times;</span>
                 <img class="modal-content" id="modalImage">
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
