@@ -50,6 +50,15 @@ function showSlides(n) {
 
 function plusSlides(n) {
   currentSlide += n; //current slide is itself plus n
+
+  //if index currentSlide is out of bounds of HTMLCollection slides
+  if (currentSlide >= slides.length) {
+    currentSlide -= slides.length;
+  }
+  if (currentSlide < 0) {
+    currentSlide += slides.length;
+  }
+  
   modalImg.src = slides.item(currentSlide).src; //updates source of modal image to new source
   console.log(currentSlide);
   console.log(slides.item(currentSlide).src);
