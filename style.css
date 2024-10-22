@@ -23,22 +23,22 @@ nav a:visited {
 nav a:hover {
   background-color: grey;
 }
-.border {
-  padding: 0 50px;
+.grid-container {
+  padding: 50px;
   /*overflow: visible;*/
   display: grid;
-  grid-auto-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
 }
-img { /*use more specific selector*/
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+}
+img.slides { /*use more specific selector*/
   /*vertical-align: middle;*/
   width: 200px;
   height: 200px;
   object-fit: cover;
 }
-/* w3schools */
-  
-  /* Create four equal columns that sits next to each other */
-  
 
   .courier-prime-regular {
     font-family: "Courier Prime", monospace;
