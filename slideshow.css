@@ -1,53 +1,53 @@
 img.slides:hover {
-    cursor: pointer;
-    transition: 0.3s;
-    opacity: 0.7;
-  }
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 0.7;
+}
 
 #myModal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgb(255,255,255); /* Fallback color */
-    background-color: rgba(255,255,255,0.4); /* Black w/ opacity */
-  }
-  /* Modal Content (Image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 100%;
-    max-height: 90%;
-    object-fit: contain;
-  }
-.captions {
-  display: none;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(255,255,255); /* Fallback color */
+  background-color: rgba(255,255,255,0.4); /* Black w/ opacity */
 }
-  /* Caption of Modal Image (Image Text) - Same Width as the Image */
-  #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #444;
-    padding: 10px 0;
-    height: 150px;
-  }
-  /* The Close Button */
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 100%;
+  max-height: 90%;
+  object-fit: contain;
+}
+.captions {
+display: none;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #444;
+  padding: 10px 0;
+  height: 150px;
+}
+/* The Close Button */
 .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #786d6d;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #786d6d;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
   .close:hover,
 .close:focus {
   color: #504949;

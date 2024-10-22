@@ -42,49 +42,49 @@ img.slides {
   object-fit: cover;
 }
 
-  .courier-prime-regular {
-    font-family: "Courier Prime", monospace;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .courier-prime-bold {
-    font-family: "Courier Prime", monospace;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .courier-prime-regular-italic {
-    font-family: "Courier Prime", monospace;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .courier-prime-bold-italic {
-    font-family: "Courier Prime", monospace;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  /* Responsive layout - makes a two column-layout instead of four columns */
+.courier-prime-bold {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.courier-prime-regular-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.courier-prime-bold-italic {
+  font-family: "Courier Prime", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
 /*
-  @media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  /*
-  @media screen and (max-width: 600px) {
-    .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/*
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
   }
-  */
+}
+*/
 /*******************************************/
