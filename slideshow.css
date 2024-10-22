@@ -24,7 +24,9 @@ img.slides:hover {
     max-height: 90%;
     object-fit: contain;
   }
-  
+.captions {
+  display: none;
+}
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
   #caption {
     margin: auto;

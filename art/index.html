@@ -21,31 +21,42 @@
         <p id="test">I do art sometimes! mostly acrylic and graphite, sometimes digital, sometimes watercolor.
             Expect lots of birds.
         </p>
-        <div class="border center">
-            <div class="row">
-                <div class="column">
-                    <img src="/LowRes/Swan2_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(0)" class="slides" alt="swan">
-                    <img src="/LowRes/Untitled (Bass)_LR.jpg" style="object-position: 5% 0;" onclick="showSlides(1)" class="slides" alt="sunny">
-                    <img src="/LowRes/Untitled (Cicada with wasp)_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(2)" class="slides" alt="cicada-killer wasp">
-                </div>
-                <div class="column">
-                    <img src="/LowRes/Ear_LR.jpg" onclick="showSlides(3)" class="slides">
-                    <img src="/LowRes/Untitled (Passenger pigeon)_LR.jpg" onclick="showSlides(4)" class="slides">
-                    <img src="/LowRes/Smug Jug_LR.jpg" onclick="showSlides(5)" class="slides">
-                </div>
-                <div class="column">
-                    <img src="/LowRes/Untitled (ISG)_LR.jpg" onclick="showSlides(6)" class="slides">
-                    <img src="/LowRes/Untitled (Heron) 2_LR.jpg" style="object-position: 100% 0;" onclick="showSlides(7)" class="slides">
+        <div class="border">
+            <div>
+                <img src="/LowRes/Swan2_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(0)" class="slides" alt="swan">
+                <div class="captions">
+                    <h1>Mute Swan</h1>
+                    <p>Mixed media ink and colored pencils, based on a photo I took in Cape Cod. 2023</p>
                 </div>
             </div>
-            <div id="myModal" class="modal">
-                <div class="close" onclick="closeModal()">&times;</div>
-                <img class="modal-content" id="modalImage">
-                <div id="caption"></div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                
+            <div>
+                <img src="/LowRes/Untitled (Bass)_LR.jpg" style="object-position: 5% 0;" onclick="showSlides(1)" class="slides" alt="sunny">
             </div>
+            <div>
+                <img src="/LowRes/Untitled (Cicada with wasp)_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(2)" class="slides" alt="cicada-killer wasp">
+            </div>
+            <div>
+                <img src="/LowRes/Ear_LR.jpg" onclick="showSlides(3)" class="slides">
+            </div>
+            <div>
+                <img src="/LowRes/Untitled (Passenger pigeon)_LR.jpg" onclick="showSlides(4)" class="slides">
+            </div>
+            <div>
+                <img src="/LowRes/Smug Jug_LR.jpg" onclick="showSlides(5)" class="slides">
+            </div>
+            <div>
+                <img src="/LowRes/Untitled (ISG)_LR.jpg" onclick="showSlides(6)" class="slides">
+            </div>
+            <div>
+                <img src="/LowRes/Untitled (Heron) 2_LR.jpg" style="object-position: 100% 0;" onclick="showSlides(7)" class="slides">
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="close" onclick="closeModal()">&times;</div>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div> <!--caption should include title, medium, a brief explaination of piece, dimentions, and year-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>  
         </div>
     </div>
     <script src="/script.js"></script>

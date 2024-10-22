@@ -24,33 +24,21 @@ nav a:hover {
   background-color: grey;
 }
 .border {
-    padding: 0 50px;
-    overflow: visible;
+  padding: 0 50px;
+  /*overflow: visible;*/
+  display: grid;
+  grid-auto-columns: auto auto auto auto;
+}
+img { /*use more specific selector*/
+  /*vertical-align: middle;*/
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 /* w3schools */
-.row {
-    /* display: -ms-flexbox;  */
-    display: flex;
-    /* -ms-flex-wrap: wrap; */
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
   
   /* Create four equal columns that sits next to each other */
-  .column {
-    /* -ms-flex: 25%;  */
-    /*flex: 100%;*/
-    /*max-width: 25%;*/
-    padding: 0 4px;
-  }
   
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-  }
 
   .courier-prime-regular {
     font-family: "Courier Prime", monospace;
@@ -74,12 +62,6 @@ nav a:hover {
     font-family: "Courier Prime", monospace;
     font-weight: 700;
     font-style: italic;
-  }
-  .center {
-    margin: auto;
-    width: 60%;
-    border: 3px solid green;
-    padding: 10px;
   }
   
 
