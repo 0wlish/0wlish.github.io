@@ -24,17 +24,19 @@ nav a:hover {
   background-color: grey;
 }
 .grid-container {
-  padding: 50px;
+  width: 840px;
+  height: 420px;
+  margin: auto;
   /*overflow: visible;*/
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
 .grid-item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 5px;
+ height: 200px;
+ width: 200px;
+ padding: 5px;
 }
-img.slides { /*use more specific selector*/
-  /*vertical-align: middle;*/
+img.slides { 
   width: 200px;
   height: 200px;
   object-fit: cover;
