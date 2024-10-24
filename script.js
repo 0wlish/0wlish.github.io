@@ -1,7 +1,8 @@
 var modal = document.getElementById("myModal"); //the entire modal
 const slides = document.getElementsByClassName("slides"); //all images to go in slideshow
+const captions = document.getElementsByClassName("captions"); //all captions for images
 var modalImg = document.getElementById("modalImage"); //current modal image
-var captionText = document.getElementById("caption"); //caption for image
+var caption = document.getElementById("caption"); //current caption for image
 var currentSlide; 
 
 //replace sources of slides with high-res images
@@ -13,7 +14,7 @@ for (let i = 0; i < slides.length; i++) {
 function showSlides(n) {
   //opens modal to specific slide number
   modalImg.src = slides.item(n).src; //modal image source equals source of slides at n
-  captionText.innerHTML = slides.item(n).alt; //caption text is alt text of slides at n
+  caption.innerHTML = captions.item(n).innerHTML; //caption text is alt text of slides at n
   openModal();
   currentSlide = n; //remember the current slide number
 }
@@ -30,7 +31,7 @@ function plusSlides(n) {
   }
 
   modalImg.src = slides.item(currentSlide).src; //updates source of modal image to new source
-  captionText.innerHTML = slides.item(currentSlide).alt; //updates caption text
+  caption.innerHTML = captions.item(currentSlide).innerHTML; //updates caption text
 }
 
 function openModal() {
