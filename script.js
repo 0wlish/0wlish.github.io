@@ -14,6 +14,7 @@ for (let i = 0; i < slides.length; i++) {
 function showSlides(n) {
   //opens modal to specific slide number
   modalImg.src = slides.item(n).src; //modal image source equals source of slides at n
+  
   caption.innerHTML = captions.item(n).innerHTML; //caption text is alt text of slides at n
   openModal();
   currentSlide = n; //remember the current slide number
