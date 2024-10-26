@@ -40,14 +40,14 @@
             <div class="grid-item">
                 <img src="/LowRes/Untitled (Cicada with wasp)_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(2)" class="slides" alt="cicada-killer wasp">
                 <div class="captions">
-                    <h1>Cicada with Cicada-killer Wasp</h1>
+                    <h1>Cicada-killer Wasp with Cicada</h1>
                     <p>Charcoal and white chalk on paper. Depicting a cicada-killer wasp killing a cicada by paralizing it. 2023.</p>
                 </div>
             </div>
             <div class="grid-item">
                 <img src="/LowRes/Ear_LR.jpg" onclick="showSlides(3)" class="slides">
                 <div class="captions">
-                    <h1>Ear Study</h1>
+                    <h1>Study of an Ear</h1>
                     <p>Acrylic on canvas. A study of a friend's ear. 2023.</p>
                 </div>
             </div>
@@ -86,12 +86,14 @@
         </div>
         <div id="myModal" class="modal">
             <div class="close" onclick="closeModal()">&times;</div>
-            <div class="modal-content" >
-                <img id="modalImage">
-                <div id="caption"></div> <!--caption should include title, medium, a brief explaination of piece, dimentions, and year-->
-            </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>  
+            <div class="modal-content">
+                <div class="img-container">
+                    <img id="modalImage">
+                </div>
+                <div id="caption"></div> <!--caption should include title, medium, a brief explaination of piece, dimentions, and year-->
+            </div>
         </div>
     </div>
     <script src="/script.js"></script>
