@@ -18,25 +18,49 @@
         </nav>
         <div class="text">
             <h1>Paleoart!</h1>
-                <div class="border center">
-                    <div class="row">
-                        <div class="column">
-                            <img src="/LowRes/Archaeopteryx_LR.jpg" onclick="showSlides(0)" class="slides">
-                            <img src="/LowRes/Anchiornis_LR.jpg" onclick="showSlides(1)" class="slides">
-                            <img src="/LowRes/Sinosauropteryx with Ephedra_LR.jpg" onclick="showSlides(2)" class="slides">
-                        </div>
-                        <div class="column">
-                            <img src="/LowRes/Tiktaalik_LR.jpg" onclick="showSlides(3)" class="slides">
-                        </div>
-                    </div>
-                    <div id="myModal" class="modal">
-                        <div class="close" onclick="closeModal()">&times;</div>
-                        <img class="modal-content" id="modalImage">
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                        <div id="caption"></div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="/LowRes/Archaeopteryx_LR.jpg" onclick="showSlides(0)" class="slides">
+                    <div class="captions">
+                        <h1>Archaeopteryx</h1>
                     </div>
                 </div>
+                <div class="grid-item">
+                    <img src="/LowRes/Anchiornis_LR.jpg" onclick="showSlides(1)" class="slides">
+                    <div class="captions">
+                        <h1>Anchiornis</h1>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/LowRes/Sinosauropteryx with Ephedra_LR.jpg" onclick="showSlides(2)" class="slides">
+                    <div class="captions">
+                        <h1>Sinosauropteryx with Ephedra</h1>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/LowRes/Tiktaalik_LR.jpg" onclick="showSlides(3)" class="slides">
+                    <div class="captions">
+                        <h1>Tiktaalik</h1>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/LowRes/sinosauropteryx_chase_LR.jpg" onclick="showSlides(4)" class="slides">
+                    <div class="captions">
+                        <h1>Sinosauropteryx Chasing a Small Mammal</h1>
+                    </div>
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="close" onclick="closeModal()">&times;</div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>  
+                <div class="modal-content">
+                    <div class="img-container">
+                        <img id="modalImage">
+                    </div>
+                    <div id="caption"></div> <!--caption should include title, medium, a brief explaination of piece, dimentions, and year-->
+                </div>
+            </div>
         </div>
         <script src="/script.js"></script>
     </body>
