@@ -2,9 +2,24 @@
 
 (function oneko() {
     const nekoEl = document.createElement("div");
+
     let nekoPosX = 32;
     let nekoPosY = 32;
-    let mousePosX = 0; //do this if no cookie
+
+    let posX = getCookie("nekoX");
+    let posY = getCookie("nekoY");
+    if (posX != "") {
+      nekoPosX = posX;
+      nekoPosY = posY;
+    }
+    else {
+      setCookie("nekoX", "32");
+      setCookie("nekoY", "32");
+      nekoPosX = 32;
+      nekoPosY = 32;
+    }
+
+    let mousePosX = 0;
     let mousePosY = 0;
 
     const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
@@ -79,7 +94,20 @@
         [-1, -1],
       ],
     };
-  
+    function getCookie(name) {
+      let n = name + "=";
+      const cArr = document.cookie.split(";");
+      for (let i = 0; i < cArr.length; i++) {
+        let c = cArr[i];
+        if (c.indexOf(n) != -1) {
+          return c.substring(n.length + c.indexOf(n), c.length);
+        }
+      }
+      return "";
+    }
+    function setCookie(name, value) {
+      document.cookie = name + "=" + value + ";" + "path=/;SameSite=None; Secure";
+    }
     function create() {
       nekoEl.id = "oneko";
       nekoEl.style.width = "32px";
@@ -201,6 +229,9 @@
   
       nekoPosX = Math.min(Math.max(16, nekoPosX), window.innerWidth - 16);
       nekoPosY = Math.min(Math.max(16, nekoPosY), window.innerHeight - 16);
+
+      setCookie("nekoX", nekoPosX);
+      setCookie("nekoY", nekoPosY);
   
       nekoEl.style.left = `${nekoPosX - 16}px`;
       nekoEl.style.top = `${nekoPosY - 16}px`;
