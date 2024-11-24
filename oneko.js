@@ -4,8 +4,9 @@
     const nekoEl = document.createElement("div");
     let nekoPosX = 32;
     let nekoPosY = 32;
-    let mousePosX = 0;
+    let mousePosX = 0; //do this if no cookie
     let mousePosY = 0;
+
     const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
     if (isReduced) {
       return;
@@ -85,7 +86,7 @@
       nekoEl.style.height = "32px";
       nekoEl.style.position = "fixed";
       nekoEl.style.pointerEvents = "none";
-      nekoEl.style.backgroundImage = "url('./red.png')";
+      nekoEl.style.backgroundImage = "url('/red.png')";
       nekoEl.style.imageRendering = "pixelated";
       nekoEl.style.left = `${nekoPosX - 16}px`;
       nekoEl.style.top = `${nekoPosY - 16}px`;
