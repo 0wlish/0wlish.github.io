@@ -5,120 +5,119 @@
         <title>art - Victoria's website</title>
         <link rel="stylesheet" href="/style.css">
         <link rel="stylesheet" href="/slideshow.css">
-        
         <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     <body class="courier-prime-regular">
-    <nav>
-        <a href="/">home</a>
-        <a href="/art">art</a>
-        <a href="/paleoart">paleoart</a>
-        <a href="/sketches-studies/">sketches and studies</a>
-        <a href="/projects">projects</a>
-        <!--<a href="/readingrecs">recommended reading</a>-->
-    </nav>
-    <div class="text">
-        <h1>art</h1>
-        <p id="test">I do art sometimes! mostly acrylic and graphite, sometimes digital, sometimes watercolor.
-            Expect lots of birds.
-        </p>
-        <div class="grid-container">
-            <div class="grid-item">
-                <img src="/LowRes/Swan2_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(0)" class="slides" alt="swan">
-                <div class="captions">
-                    <h1>Mute Swan</h1>
-                    <p>
-                        Mixed media ink and colored pencils. Based on a photo 
-                        I took in Cape Cod. 2023.
-                    </p>
+        <script src="/oneko.js"></script>
+        <nav>
+            <a href="/">home</a>
+            <a href="/art">art</a>
+            <a href="/paleoart">paleoart</a>
+            <a href="/sketches-studies/">sketches and studies</a>
+            <a href="/projects">projects</a>
+            <!--<a href="/readingrecs">recommended reading</a>-->
+        </nav>
+        <div class="text">
+            <h1>art</h1>
+            <p id="test">I do art sometimes! mostly acrylic and graphite, sometimes digital, sometimes watercolor.
+                Expect lots of birds.
+            </p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="/LowRes/Swan2_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(0)" class="slides" alt="swan">
+                    <div class="captions">
+                        <h1>Mute Swan</h1>
+                        <p>
+                            Mixed media ink and colored pencils. Based on a photo 
+                            I took in Cape Cod. 2023.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/LowRes/Untitled (Bass)_LR.jpg" style="object-position: 5% 0;" onclick="showSlides(1)" class="slides" alt="sunny">
+                    <div class="captions">
+                        <h1>Sketchbook Cover 1</h1>
+                        <p>
+                            Acrylic on canvas. Freshwater sunfish. 2023.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/LowRes/Untitled (Cicada with wasp)_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(2)" class="slides" alt="cicada-killer wasp">
+                    <div class="captions">
+                        <h1>Cicada-killer Wasp with Cicada</h1>
+                        <p>
+                            Charcoal and white chalk on paper. Depicting a 
+                            cicada-killer wasp killing a cicada by paralyzing it. 
+                            2023.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/LowRes/Ear_LR.jpg" onclick="showSlides(3)" class="slides">
+                    <div class="captions">
+                        <h1>Study of an Ear</h1>
+                        <p>
+                            Acrylic on canvas. A study of a friend's ear. 2023.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/LowRes/Untitled (Passenger pigeon)_LR.jpg" onclick="showSlides(4)" class="slides">
+                    <div class="captions">
+                        <h1>Passenger Pigeon</h1>
+                        <p>
+                            Gouache on paper depicting a Passenger Pigeon sitting on a 
+                            telephone wire as a jet airliner passes overhead. Note that 
+                            this is an impossible scene, as the pigeon is thought to 
+                            have gone extinct in the wild in 1900, and the first commercial 
+                            jet airliner flight happened in 1952. 2024.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/LowRes/Smug Jug_LR.jpg" onclick="showSlides(5)" class="slides">
+                    <div class="captions">
+                        <h1>Smug Jug</h1>
+                        <p>
+                            Glazed ceramic. A collaboration between myself and my 
+                            friend Susanna, who made the jug. 2024.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/LowRes/Untitled (ISG)_LR.jpg" onclick="showSlides(6)" class="slides">
+                    <div class="captions">
+                        <h1>Courtyard at the Isabella Stewart Gardner Museum</h1>
+                        <p>
+                            Graphite on paper of the courtyard of the Isabella 
+                            Stewart Gardner Museum.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="/LowRes/Untitled (Heron) 2_LR.jpg" style="object-position: 100% 0;" onclick="showSlides(7)" class="slides">
+                    <div class="captions">
+                        <h1>Sketchbook Cover 2</h1>
+                        <p>
+                            Gouache on paper of a Great Blue Heron and a 
+                            Smallmouth Bass. 2024
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="grid-item">
-                <img src="/LowRes/Untitled (Bass)_LR.jpg" style="object-position: 5% 0;" onclick="showSlides(1)" class="slides" alt="sunny">
-                <div class="captions">
-                    <h1>Sketchbook Cover 1</h1>
-                    <p>
-                        Acrylic on canvas. Freshwater sunfish. 2023.
-                    </p>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="/LowRes/Untitled (Cicada with wasp)_LR.jpg" style="object-position: 50% 0%" onclick="showSlides(2)" class="slides" alt="cicada-killer wasp">
-                <div class="captions">
-                    <h1>Cicada-killer Wasp with Cicada</h1>
-                    <p>
-                        Charcoal and white chalk on paper. Depicting a 
-                        cicada-killer wasp killing a cicada by paralyzing it. 
-                        2023.
-                    </p>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="/LowRes/Ear_LR.jpg" onclick="showSlides(3)" class="slides">
-                <div class="captions">
-                    <h1>Study of an Ear</h1>
-                    <p>
-                        Acrylic on canvas. A study of a friend's ear. 2023.
-                    </p>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="/LowRes/Untitled (Passenger pigeon)_LR.jpg" onclick="showSlides(4)" class="slides">
-                <div class="captions">
-                    <h1>Passenger Pigeon</h1>
-                    <p>
-                        Gouache on paper depicting a Passenger Pigeon sitting on a 
-                        telephone wire as a jet airliner passes overhead. Note that 
-                        this is an impossible scene, as the pigeon is thought to 
-                        have gone extinct in the wild in 1900, and the first commercial 
-                        jet airliner flight happened in 1952. 2024.
-                    </p>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="/LowRes/Smug Jug_LR.jpg" onclick="showSlides(5)" class="slides">
-                <div class="captions">
-                    <h1>Smug Jug</h1>
-                    <p>
-                        Glazed ceramic. A collaboration between myself and my 
-                        friend Susanna, who made the jug. 2024.
-                    </p>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="/LowRes/Untitled (ISG)_LR.jpg" onclick="showSlides(6)" class="slides">
-                <div class="captions">
-                    <h1>Courtyard at the Isabella Stewart Gardner Museum</h1>
-                    <p>
-                        Graphite on paper of the courtyard of the Isabella 
-                        Stewart Gardner Museum.
-                    </p>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="/LowRes/Untitled (Heron) 2_LR.jpg" style="object-position: 100% 0;" onclick="showSlides(7)" class="slides">
-                <div class="captions">
-                    <h1>Sketchbook Cover 2</h1>
-                    <p>
-                        Gouache on paper of a Great Blue Heron and a 
-                        Smallmouth Bass. 2024
-                    </p>
+            <div id="myModal" class="modal">
+                <div class="close" onclick="closeModal()">&times;</div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>  
+                <div class="modal-content">
+                    <div class="img-container">
+                        <img id="modalImage">
+                    </div>
+                    <div id="caption"></div> <!--caption should include title, medium, a brief explaination of piece, dimentions, and year-->
                 </div>
             </div>
         </div>
-        <div id="myModal" class="modal">
-            <div class="close" onclick="closeModal()">&times;</div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>  
-            <div class="modal-content">
-                <div class="img-container">
-                    <img id="modalImage">
-                </div>
-                <div id="caption"></div> <!--caption should include title, medium, a brief explaination of piece, dimentions, and year-->
-            </div>
-        </div>
-    </div>
-    <script src="/script.js"></script>
-    <script src="../oneko.js"></script>
+        <script src="/script.js"></script>
     </body>
 </html>
