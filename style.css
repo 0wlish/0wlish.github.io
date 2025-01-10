@@ -66,15 +66,26 @@ img.slides {
   font-style: italic;
 }
 #labyrinth {
-  width: fit-content;
+  width: 800px;
   height: 340px;
-  margin: auto;
+  margin: 20px auto;
   background-color: rgb(38, 32, 58);
   color: white;
 }
-#labyrinth a:visited, #labyrinth a:link {
+#labyrinth a:visited, #labyrinth a:link, #cbird a:visited, #cbird a:link {
   color: white;
 }
-#labyrinth p {
+#labyrinth p, #cbird p {
   margin: 30px;
+}
+#cbird {
+  width: 800px;
+  height: 250px;
+  margin: auto;
+  background-color: black;
+  color: white;
+}
+#cbird img {
+  margin: 0px auto 20px 20px;
+  display: block;
 }
