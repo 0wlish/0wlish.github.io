@@ -89,3 +89,15 @@ img.slides {
   margin: 0px auto 20px 20px;
   display: block;
 }
+canvas {
+  padding: 20px 30px 40px;
+  width: 129px;
+  height: 65px;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+#moon {
+  background-color: #1e2331;
+}
