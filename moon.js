@@ -83,28 +83,30 @@ function animate() {
         SHEIGHT
     );
 }
-function getMoonPhase() {
-    //returns number 0..7 based on current moon phase
+function getPhaseNumber() {
     //full length of synodic month: 29.530588861
     //increment: 1.230441203 (synodic/24)
     const date = new Date();
     var daysFromEpoch = date.getTime() * 0.000000011574;
     var ageOfPhase = (daysFromEpoch - 6.751535545) % 29.530588861;
-    console.log('age of phase:'); //testing
-    console.log(ageOfPhase);
-    if (ageOfPhase <= 1.230441203 && ageOfPhase > 28.300147670) {
+    return ageOfPhase;
+}
+function getMoonPhase() {
+    //returns number 0..7 based on current moon phase
+    age = getPhaseNumber();
+    if (age <= 1.230441203 && age > 28.300147670) {
         return 0; //newM
-    } else if (ageOfPhase <= 6.152206015) {
+    } else if (age <= 6.152206015) {
         return 1; //waxC
-    } else if (ageOfPhase <= 8.613088421) {
+    } else if (age <= 8.613088421) {
         return 2; //firstQ
-    } else if (ageOfPhase <= 13.534852230) {
+    } else if (age <= 13.534852230) {
         return 3; //waxG
-    } else if (ageOfPhase <= 15.995735640) {
+    } else if (age <= 15.995735640) {
         return 4; //fullM
-    } else if (ageOfPhase <= 20.917500450) {
+    } else if (age <= 20.917500450) {
         return 5; //wanG
-    } else if (ageOfPhase <= 23.378382860) {
+    } else if (age <= 23.378382860) {
         return 6; //lastQ
     } else {
         return 7; //wanC
@@ -137,7 +139,9 @@ function showPhase() {
         case 7:
             phase = "waning crescent";
     }
-    document.getElementsByTagName("canvas")[0].title = phase;
+    let percent = Math.round((((getPhaseNumber() + 14.7652944305) % 29.530588861) / 29.530588861) * 100);
+    percent += "%"
+    document.getElementsByTagName("canvas")[0].title = phase + " (" + percent + ")";
 }
 image.onload = function() {
     animate();
