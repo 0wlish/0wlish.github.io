@@ -85,7 +85,6 @@ function animate() {
 }
 function getPhaseNumber() {
     //full length of synodic month: 29.530588861
-    //increment: 1.230441203 (synodic/24)
     const date = new Date();
     var daysFromEpoch = date.getTime() * 0.000000011574;
     var ageOfPhase = (daysFromEpoch - 6.751535545) % 29.530588861;
@@ -93,6 +92,7 @@ function getPhaseNumber() {
 }
 function getMoonPhase() {
     //returns number 0..7 based on current moon phase
+    //increment: 1.230441203 (synodic/24)
     age = getPhaseNumber();
     if (age <= 1.230441203 && age > 28.300147670) {
         return 0; //newM
@@ -139,7 +139,21 @@ function showPhase() {
         case 7:
             phase = "waning crescent";
     }
-    let percent = Math.round((((getPhaseNumber() + 14.7652944305) % 29.530588861) / 29.530588861) * 100);
+    let percent = 0;
+    if (getPhaseNumber() == 0) {
+        percent = 0;
+    }
+    else if (getPhaseNumber() > 0 && getPhaseNumber < 14.7652944305) {
+        percent = Math.round(getPhaseNumber() / 14.7652944305 * 100);
+    }
+    else if (getPhaseNumber() == 14.7652944305) {
+        percent = 100;
+    }
+    else if (getPhaseNumber() > 14.7652944305) {
+        percent = Math.round((29.530588861 - getPhaseNumber()) / 14.7652944305 * 100);
+    }
+    
+    //percent = Math.round((((getPhaseNumber() + 14.7652944305) % 29.530588861) / 29.530588861) * 100);
     percent += "%"
     document.getElementsByTagName("canvas")[0].title = phase + " (" + percent + ")";
 }
