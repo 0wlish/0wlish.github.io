@@ -155,7 +155,8 @@ function showPhase() {
     
     //percent = Math.round((((getPhaseNumber() + 14.7652944305) % 29.530588861) / 29.530588861) * 100);
     percent += "%"
-    document.getElementsByTagName("canvas")[0].title = phase + " (" + percent + ")";
+    //document.getElementsByTagName("canvas")[0].title = phase + " (" + percent + ")";
+    document.getElementsByTagName("canvas")[0].title = phase;
 }
 image.onload = function() {
     animate();
